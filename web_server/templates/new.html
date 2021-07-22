@@ -6,22 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        table {
+            margin: 10px;
+        }
+
+        tr:first-child td {
+            border-top-color: black;
+        }
+
+        tr:nth-child(3n) td {
+            border-bottom-color: black;
+        }
+
+        td {
+            border: 1px solid lightgrey;
+            height: 40px;
+            width: 40px;
+        }
+
+        td:first-child {
+            border-left-color: black;
+        }
+
+        td:nth-child(3n) {
+            border-right-color: black;
+        }
+
+        input {
+            padding: 0;
+            text-align: center;
+            border: 0;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+        }
+
+        input:hover {
+            background: #ffffff;
+        }
+    </style>
 </head>
 
 <body>
-    {% for key in r %}
-    {% for value in key%}
-    <table id="answer">
+
+   <center>
+    <table id="answer sudoku">
         <tbody>
+
+            {% for key in r %}
             <tr>
+                {% for value in key%}
                 <td><input type='text' value={{value}} id='1' name='1'></td>
+                {% endfor %}
+                <br>
             </tr>
+            {% endfor %}
+
         </tbody>
     </table>
+   </center>
     <!-- {{value}} -->
-    {% endfor %}
-    <br>
-    {% endfor %}
+
 </body>
 
 </html>
