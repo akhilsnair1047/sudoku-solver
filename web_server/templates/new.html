@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% for key in r %}
+    {% for value in key%}
+    <table id="answer">
+        <tbody>
+            <tr>
+                <td><input type='text' value={{value}} id='1' name='1'></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- {{value}} -->
+    {% endfor %}
+    <br>
+    {% endfor %}
+</body>
+
+</html>
