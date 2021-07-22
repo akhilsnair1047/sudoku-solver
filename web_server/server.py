@@ -19,7 +19,7 @@ def hello_world():
         #     for j in range(9):
         #         print(r[i][j], end=" ")
         #     print()
-        if r == 1:
+        if r == 'Not exist':
             return render_template('err.html')
         else:
             return render_template('new.html', r=r)

@@ -41,4 +41,4 @@ if __name__ != "__main__":
         if solveSuduko(grid, 0, 0):
             return grid
         else:
-            return 1
+            return 'Not exist'
