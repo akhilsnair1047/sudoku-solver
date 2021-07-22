@@ -19,6 +19,9 @@ def hello_world():
         #     for j in range(9):
         #         print(r[i][j], end=" ")
         #     print()
-        return render_template('new.html', r=r)
+        if r == 1:
+            return render_template('err.html')
+        else:
+            return render_template('new.html', r=r)
     if request.method == "GET":
         return render_template('home.html')
