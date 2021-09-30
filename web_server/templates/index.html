@@ -10,10 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        body{
-            background-color: brown;
-            /* color: #ffffff; */
-        }
         * {
             box-sizing: border-box;
         }
@@ -54,45 +50,69 @@
         }
 
         input[type='text']:hover {
-            background: #ffffff;
+            background: #7ce072;
         }
 
         input[type='submit'] {
-            padding: 5px 100px;
+            background-color: #4224c7;
+            border-radius: 20px 20px 20px;
+            color: white;
+            padding: 05px 05px;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            margin: 2px 2px;
+            cursor: pointer;
+        }
+
+        input[type='submit']:hover {
+            background-color: #248bc7;
+            border-radius: 20px 20px 20px;
+            color: white;
+            padding: 05px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
         }
     </style>
 </head>
 
-<body>
-    <div class="container">
-        <h1 style="color: #ffffff;">Sudoku Solver</h1>
+<body
+    style="background-image: linear-gradient(rgb(46, 46, 230), rgb(140, 0, 255)); background-size:cover; background-repeat: no-repeat;">
+    <div class="container" style="margin-bottom: 10%;">
+        <h1 style="font-family:forte; font-size:70px; text-align:center; color:white;" id="top">Sudoku Solver</h1>
+        <hr><br>
         <div class="row">
-            <div class="col-sm-6" style="color: #ffffff;">
-                <h3>How to play Sudoku</h3>
-                <p>
-                    The goal of Sudoku is to fill in a 9×9 grid with digits so that each column, row, and 3×3 section
-                    contain the numbers between 1 to 9. At the beginning of the game, the 9×9 grid will have some of the
-                    squares filled in. Your job is to use logic to fill in the missing digits and complete the grid.
-                    Don’t forget, a move is incorrect if:
-                <ul>
-                    <li>
-                        Any row contains more than one of the same number from 1 to 9
-                    </li>
-                    <li>
-                        Any column contains more than one of the same number from 1 to 9
+            <div class="col-sm-6">
+                <h2 style="font-family:arial; color:white;">How to play Sudoku:-</h2>
+                
+                    <p style="color:white;">
+                        The goal of Sudoku is to fill in a 9×9 grid with digits so that each column, row, and 3×3
+                        section contain the numbers between 1 to 9. At the beginning of the game, the 9×9 grid will have
+                        some of the squares filled in. Your job is to use logic to fill in the missing digits and
+                        complete the grid. Don’t forget, a move is incorrect if:
+                    <ul style="color:white;">
+                        <li>
+                            Any row contains more than one of the same number from 1 to 9
+                        </li>
+                        <li>
+                            Any column contains more than one of the same number from 1 to 9
 
-                    </li>
-                    <li>
-                        Any 3×3 grid contains more than one of the same number from 1 to 9
-                    </li>
-                </ul>
-                </p>
-                <h3>How to use this Solver</h3>
-                <p>
-                    You can enter the values in there repective places, leaving other places as default value that is
-                    '0'. After you finish, hit the submit button. This will show you the result you wanted if it exist.
-
-                </p>
+                        </li>
+                        <li>
+                            Any 3×3 grid contains more than one of the same number from 1 to 9
+                        </li>
+                    </ul>
+                    </p>
+                    <h3 style="color:white;">How to use this Solver</h3>
+                    <p style="color:white;">
+                        You can enter the values in there repective places, leaving other places as default value that is
+                        '0'. After you finish, hit the submit button. This will show you the result you wanted if it exist.
+    
+                    </p>
+                    
             </div>
             <div class="col-sm-6">
                 <center>
@@ -204,6 +224,7 @@
                         <input type="submit" value="Submit">
                 </center>
                 </form>
+               
             </div>
             <!-- <div class="col-sm-4">
             <h3>Column 3</h3>

@@ -22,6 +22,6 @@ def hello_world():
         if r == 1:
             return render_template('err.html')
         else:
-            return render_template('new.html', r=r)
+            return render_template('result.html', r=r)
     if request.method == "GET":
-        return render_template('home.html')
+        return render_template('index.html')
