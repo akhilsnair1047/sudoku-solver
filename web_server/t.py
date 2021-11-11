@@ -42,3 +42,4 @@ if __name__ != "__main__":
             return grid
         else:
             return 1
+            
